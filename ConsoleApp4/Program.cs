@@ -14,14 +14,22 @@ using System.ComponentModel.DataAnnotations;
 //Console.WriteLine((sum1*sum2)/(array1.Length*array2.Length));
 
 int n;
-int [] aray =new int [int.MaxValue];
+int [] aray =new int [20];
 do
 {
-    Console.WriteLine("n=");
+    Console.Write("n=");
     n = Convert.ToInt32(Console.ReadLine());
 } while (n < 1 && n > 20);
 for(int i = 0; i < n; i++)
 {
+    Console.Write("  aray["+i+"]=");
     aray[i]=  Convert.ToInt32(Console.ReadLine());
-    if (aray[i])
+    
+}
+for (int i = 0; i < n; i++)
+{
+    if (aray[i] > 0)
+    {
+        Console.WriteLine("  aray[" +i+"[=" +aray[i]);
+    }
 }

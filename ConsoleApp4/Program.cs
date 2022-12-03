@@ -61,10 +61,8 @@ static void NewMethod()
         if (array1[i] < 0)
         {
             j++;
-            for (int k = 0; k <= j; k++)
-            {
-                array2[k] = 0;
-            }
+          array2[j] = 0;
+            
         }
     }
     for(int i=0; i<=j; i++)
